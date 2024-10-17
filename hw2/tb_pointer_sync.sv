@@ -12,12 +12,12 @@ module tb_pointer_sync;
 
     // gen clk
     initial clk = 0;
-    always #5 clk = ~clk; // toggle clk every 5 time units
+    always #5 clk = ~clk; // toggle clk every 5 ns
 
     // test
     initial begin
         bin_ptr_in = 4'b0000; // input
-        #10; // delay 10 time units
+        #10; // delay 10 ns
         bin_ptr_in = 4'b0001;
         #10;
         bin_ptr_in = 4'b0010;
@@ -48,5 +48,5 @@ module tb_pointer_sync;
         #10;
         bin_ptr_in = 4'b1111;
         #10;
-        $finish;
     end
+endmodule

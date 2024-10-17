@@ -10,7 +10,7 @@ module tb_gray2bin;
 
     initial begin
         gray_in = 4'b0000; // input
-        #1; // delay 1 time unit
+        #1; // delay 1 ns
         gray_in = 4'b0001;
         #1;
         gray_in = 4'b0010;
@@ -41,5 +41,5 @@ module tb_gray2bin;
         #1;
         gray_in = 4'b1111;
         #1;
-        $finish;
     end
+endmodule
