@@ -18,7 +18,7 @@ def run_analysis(iterations):
     print("--Average Optimization Time Analysis from 2 to 10 Vars--\n")
     
     # issue with increasing runtime at 5 variables and above
-    for num_vars in range(2, 9): # 2 to 4 variables due to computational time growth
+    for num_vars in range(2, 5): # 2 to 4 variables due to computational time growth
         qm_times = []
         petrick_times = []
         total_times = []
